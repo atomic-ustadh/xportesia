@@ -61,3 +61,23 @@ function toggleAffDisplay() {
 // This variable called for copyright date
 var d = new Date();
 	document.getElementById("yyear").innerHTML = d.getFullYear();
+
+
+// Accordion Section Script Starts Here
+
+var accordion = document.getElementsByClassName("shell");
+var i;
+
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var inner = this.nextElementSibling;
+        if (inner.style.display === "block") {
+            inner.style.display = "none";
+        } else {
+            inner.style.display = "block";
+        }
+    });
+}
+
+// Accordion Section Script Ends Here

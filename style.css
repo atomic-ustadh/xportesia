@@ -5,9 +5,9 @@
 
 body {
 	padding: 0px;
-		margin: 0px;
-		background-color: white;
-		font-family: Carrois Gothic;
+	margin: 0px;
+	background-color: white;
+	font-family: Carrois Gothic;
 }
 
 /* Special Section Ends Here */
@@ -144,7 +144,7 @@ body {
 
 /* Banner Section Starts Here */
 .banner {
-	background-image: url(../Business/business4-slider-bg.jpg);
+	background-image: url(business4-slider-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	min-height: 100%;
@@ -279,8 +279,8 @@ body {
 		padding-bottom: 10px;
 		display: block;
 		height: auto;
-}
-	
+	}
+
 	.bbf-div {
 		display: block;
 		flex-direction: row;
@@ -288,7 +288,7 @@ body {
 		margin-left: 20px;
 		margin-right: 0px;
 	}
-	
+
 	.bbf-content {
 		background-color: transparent;
 		color: white;
@@ -296,7 +296,7 @@ body {
 		padding: 0px 0px;
 		text-align: left;
 		border-radius: 10px;
-}
+	}
 
 }
 
@@ -352,20 +352,20 @@ body {
 	}
 
 	.bck-to-top {
-    padding: 4px;
-    height: 40px;
-    width: 40px;
-    font-size: 22px;
-    right: 120px;
-    bottom: -13px;
-}
+		padding: 4px;
+		height: 40px;
+		width: 40px;
+		font-size: 22px;
+		/* right: 120px;
+		bottom: -13px; */
+	}
 
 }
 
 /* Mobile Responsiveness Section Ends Here */
 /* Footer Section Ends Here */
 
-/* This Section for excos.html table styling */
+/* excos.html table section starts here */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -386,4 +386,266 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
 	background-color: white
+}
+
+/* excos.html table section ends here */
+
+/* Accordion Section Styling Starts Here */
+.shell {
+	background-color: black;
+	color: #feba4d;
+	;
+	cursor: pointer;
+	padding: 15px;
+	padding-left: 50px;
+	width: 100%;
+	border-top: 1px solid black;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	font-family: 'Carrois Gothic';
+}
+
+.shell::after {
+	/* content: url(../svg/icon-expand-more.svg); */
+	content: "+";
+	float: left;
+	width: 50px;
+	height: 5px;
+}
+
+.active::after {
+	content: "-";
+	float: left;
+	width: 50px;
+	height: 5px;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
+
+.shell:hover {
+	background-color: #ccc;
+	color: black;
+}
+
+.inner {
+	padding: 0 18px;
+	padding-left: 50px;
+	display: none;
+	stroke-opacity: 0.4;
+	background-color: transparent;
+	color: #feba4d;
+	overflow: hidden;
+}
+
+/* Accordion Section Styling Stops Here */
+
+/* about.html styling section starts here */
+
+.md1 {
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: black;
+	padding-left: 100px;
+	padding-top: 70px;
+	padding-right: 50px;
+}
+
+.md2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.md3 {
+	width: 30%;
+	height: auto;
+	background-color: rgb(0, 0, 0, 0.5);
+}
+
+.md3-img {
+	width: 100%;
+	height: 100%;
+}
+
+.md3-inner {
+	padding: 20px;
+	position: absolute;
+	background-color: rgb(0, 0, 0, 0.5);
+	color: white;
+	top: 500px;
+	font-weight: 400;
+}
+
+.md4 {
+	width: 70%;
+	height: auto;
+	background-color: burlywood;
+	padding: 50px 20px 20px 50px;
+}
+
+.md5 {
+	border-left: 10px solid black;
+}
+
+.md5-h3 {
+	padding-left: 10px;
+	font-size: 34px;
+	font-weight: 400;
+}
+
+.ms1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.ms2 {
+	width: 50%;
+	background-color: rgb(0, 0, 0, 0.5);
+	color: white;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.ms2-p1 {
+	padding-top: 20px;
+	color: #feba4d;
+}
+
+.ms2-h3 {
+	font-size: 80px;
+	font-weight: 800;
+	color: white;
+	margin-top: -10px;
+}
+
+.ms3 {
+	width: 50%;
+}
+
+.ms3-img {
+	width: 100%;
+	height: 600px;
+}
+
+.wd1 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+
+.wd2 {
+	width: 55%;
+	padding-right: 20px;
+}
+
+.wd3 {
+	width: 40%;
+	background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+	.md1 {
+		width: 100%;
+		height: auto;
+		display: block;
+		background-color: black;
+		padding-left: 5px;
+		padding-top: 0px;
+		padding-right: 5px;
+	}
+
+	.md2,
+	.ms1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.md3 {
+		width: 100%;
+		height: 525px;
+		background-color: rgb(0, 0, 0, 0.5);
+	}
+
+	.md3-img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.md3-inner {
+		padding: 20px;
+		position: absolute;
+		background-color: rgb(0, 0, 0, 0.5);
+		color: white;
+		top: 500px;
+		font-weight: 400;
+	}
+
+	.md4 {
+		width: 100%;
+		height: auto;
+		background-color: burlywood;
+		padding: 0px 0px 0px 3px;
+	}
+
+	.md5 {
+		border-left: 10px solid black;
+	}
+
+	.md5-h3 {
+		padding-left: 10px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.ms2 {
+		width: 100%;
+		background-color: rgb(0, 0, 0, 0.5);
+		color: white;
+		padding-top: 0px;
+		padding-right: 10px;
+	}
+
+	.ms2-p1 {
+		padding-top: 0px;
+		color: #feba4d;
+	}
+
+	.ms2-h3 {
+		font-size: 50px;
+		font-weight: 400;
+		color: white;
+	}
+
+	.ms3 {
+		width: 100%;
+	}
+
+	.ms3-img {
+		width: 100%;
+		height: 350px;
+	}
+
+	.wd1{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-left: 5px;
+		padding-bottom: 10px;
+	}
+	
+	.wd2{
+		width: 100%;
+		padding-right: 10px;
+	}
+	
+	.wd3{
+		width: 98%;
+		background-color: black;
+	}
 }
