@@ -522,6 +522,13 @@ tr:nth-child(odd) {
 	margin-top: -10px;
 }
 
+.ms2-h3c {
+	font-size: 60px;
+	font-weight: 800;
+	color: white;
+	/* margin-top: -10px; */
+}
+
 .ms3 {
 	width: 50%;
 }
@@ -622,6 +629,13 @@ tr:nth-child(odd) {
 		color: white;
 	}
 
+	.ms2-h3c {
+		font-size: 50px;
+		font-weight: 400;
+		color: white;
+		margin-top: -10px;
+	}
+
 	.ms3 {
 		width: 100%;
 	}
@@ -648,4 +662,95 @@ tr:nth-child(odd) {
 		width: 98%;
 		background-color: black;
 	}
+}
+
+.ca1{
+	width: 100%;
+	display: block;
+	background-color: black;
+	padding-left: 200px;
+	padding-right: 100px;
+	border-bottom: 2px solid white;
+}
+
+.ca2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.ca3{
+	background-color: none;
+	color: #feba4d;
+	width: 20%;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	line-height: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.ca1{
+		width: 100%;
+		display: block;
+		background-color: black;
+		padding-left: 126px;
+		padding-right: 100px;
+		border-bottom: 2px solid white;
+	}
+	
+	.ca2{
+		display: flex;
+    flex-direction: column;
+	}
+	
+	.ca3{
+		background-color: transparent;
+    color: #feba4d;
+    width: 120%;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    line-height: 0px;
+	}
+}
+
+
+form {
+	margin-top: 20px;
+	font-family: Carrois Gothic;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-family: Carrois Gothic;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-family: Carrois Gothic;
+}
+
+button[type="submit"] {
+	background-color: #feba4d;
+	color: black;
+	font-family: Carrois Gothic;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button[type="submit"]:hover {
+	background-color: black;
+	border: 2px solid white;
+	color: white;
 }
