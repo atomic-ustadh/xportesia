@@ -35,32 +35,50 @@
 		</nav>
 	</header> <!-- Header Section Stops Here -->
 
-	<div class="md1" style="/* padding-right: 112px; */">
-		<!-- Manager's Showcase Ends Here --> 
-	<div>
-		<div class="wd1" style="color: #feba4d;">
-			<div class="wd2">
-				<h3 style="font-size: 34px; text-align: center;">Write a Message</h3>
-				<form action="" method="POST" name="contact-form" id="contact-form">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required>
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required>
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" rows="4" required></textarea>
-					<button type="submit">Send a Message</button>
-				</form>
-			</div>
-	
-			<div class="wd3" style="margin-top: 20px;">
-				<h2 style="color: #feba4d; padding-left: 20px; font-size: 40px;padding-top:30px;">Contact us and Let us know about your Goals</h2>
-				<br>
-				<p style="color: #feba4d; padding-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus alias, fugiat animi perspiciatis numquam commodi ipsa mollitia, eos quis iure incidunt ullam ea enim, esse cupiditate? Ex, ipsa nulla.</p>
+	<div class="md1" style="padding-right: 1px;">
+		<!-- Manager's Showcase Ends Here -->
+		<div>
+			<div class="wd1" style="color: #feba4d;">
+				<div class="wd2">
+					<h3 style="font-size: 34px; text-align: center;">Write a Message</h3>
+					<form action="" method="POST" name="contact-form" id="contact-form">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="4" required></textarea>
+						<button type="submit">Send a Message</button>
+					</form>
+				</div>
+
+				<div class="wd3" style="margin-top: 20px;">
+					<h2 style="color: #feba4d; padding-left: 20px; font-size: 40px;padding-top:30px;">Contact us and Tell
+						us about your Goals</h2>
+					<br>
+					<p style="color: #feba4d; padding-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit.
+						Distinctio necessitatibus alias, fugiat animi perspiciatis numquam commodi ipsa mollitia, eos
+						quis iure
+						incidunt ullam ea enim, esse cupiditate? Ex, ipsa nulla.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- <br>  Check Before Touching -->
+	<div style="width: 100%; display: block; margin-right: auto; margin-left: auto; background-color: white; padding: 10px 20px; height: auto; text-align: center;">
+		<h2>Contact Us</h2>
+		<p style="font-size: 30px;"><b>Address:</b> Plot 83, Ralph Shodeinde Street, 4th Floor, Building 2, Rivers House,
+			Kubwa, Abuja, Nigeria. 901002</p>
+			<img src="./business4-icon7.png" alt="Contact-Us">
+			<p style="font-size: 30px; margin-top: 10px;">08162724270, 08162724270</p>
+			<br>
+			<img src="./business4-icon8.png" alt="Mail-Us">
+			<p style="font-size: 20px; margin-top: 10px;"><a href="mailto:amslaglobalexport@gmail.com" target="_blank"
+					style="text-decoration: none;">amslaglobalexport@gmail.com</a></p>
+	</div>
+
+	<!-- Do not touch unless Necessary  <br>  Check Before Touching -->
 	<div class="bf-div"><!-- Before Footer Section Starts Here -->
 		<div class="bbf-div"> <!-- Justification Section Starts Here -->
 
@@ -72,25 +90,20 @@
 			<section class="bbf-content">
 				<h3 style="color: #feba4d;">Useful Links</h3>
 				<div style="display: flex; flex-direction: column;">
-					<a href="#" style="text-decoration: none; color: white; height: 30px;">Welcome</a>
-					<a href="#" style="text-decoration: none; color: white; height: 30px;">Services</a>
-					<a href="#" style="text-decoration: none; color: white; height: 30px;">Contact</a>
-					<a href="#" style="text-decoration: none; color: white; height: 30px;">About</a>
-					<a href="#" style="text-decoration: none; color: white; height: 30px;">Become a Partner</a>
+					<a href="./index.html" class="u-link">Welcome</a>
+					<a href="#" class="u-link">Services</a>
+					<a href="./contact-us.html" class="u-link">Contact</a>
+					<a href="./about.html" class="u-link">About</a>
+					<a href="#" class="u-link">Become a Partner</a>
 				</div>
 			</section>
 			<!-- Interval -->
 			<section class="bbf-content">
 				<h3 style="color: #feba4d;">Our Address</h3>
-				<p style="width: 150px; line-height: 25px;">ITMS Building, Close to Zenith Bank, Main Campus, University of
-					Abuja, Abuja.</p>
-		</div>
-		</section>
-
-	</div> <!-- Justification Section Ends Here -->
-	</div><!-- Before Section Ends Here -->
-
-	<!-- Do not touch unless Necessary-->
+				<p style="width: 150px; line-height: 25px;">Plot 83, Ralph Shodeinde Street, 4th Floor, Building 2, Rivers House, Kubwa, Abuja, Nigeria. 901002</p>
+			</section>
+		</div> <!-- Justification Section Ends Here -->
+	</div> <!-- Before Footer Section Ends Here -->
 
 	<!-- Footer Section Starts Here -->
 	<footer class="pg-foot">
@@ -107,14 +120,14 @@
 <script>
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbxQayjg7568oZ6LGTg8LArwKp7Lw2fPlNN5PGIVAt4R5iUjmzrT8iNS3-ZVGAYHb8ja/exec'
 	const form = document.forms['contact-form']
-	
+
 	form.addEventListener('submit', e => {
 		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		.then(response => alert("Thank you! your form is submitted successfully." ))
-		.then(() => {  window.location.reload(); })
-		.catch(error => console.error('Error!', error.message))
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => alert("Thank you! your form is submitted successfully."))
+			.then(() => { window.location.reload(); })
+			.catch(error => console.error('Error!', error.message))
 	})
-	</script>
+</script>
 
 </html>
