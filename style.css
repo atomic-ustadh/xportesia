@@ -760,3 +760,163 @@ button[type="submit"]:hover {
 	border: 2px solid white;
 	color: white;
 }
+
+/* NEW ONE */
+.large-cont{
+	width: 100%; 
+	background-color: white; 
+	padding-top: 20px;
+}
+
+.inner{
+	width: 50%;
+	margin-right: 130px;
+	margin-left: auto;
+	display: flex;
+	margin-top: -10px;
+}
+
+.dot{
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%; 
+	background-color: red; 
+	margin-right: 10px;
+}
+
+.long-dot{
+	width: 100px; 
+	height: 10px; 
+	border-radius: 80px; 
+	background-color: red; 
+	margin-right: 10px;
+}
+
+.lsec{
+	width: 30%;
+	border: 2px solid gray;
+	margin-left: 35px;
+	background-color: white;
+	box-shadow: 2px 5px 5px gray;
+}
+
+.lsec-des{
+	padding: 10px;
+}
+
+.img-des{
+	width: 100%; 
+	border-bottom: 2px solid black;
+}
+
+.container{
+	width: 70%; 
+	display: flex; 
+	margin-left: 150px;
+	padding-bottom: 20px;
+}
+
+pre{
+	font-size: 20px;
+	text-align: center;
+}
+
+.img-des{
+	width: 100%; 
+	border-bottom: 2px solid black;
+}
+
+/* This Section is for Media Screens - Mobile Devices */
+@media screen and (max-width: 600px) {
+
+	.lsec {
+			width: 90%;
+			border: 2px solid gray;
+			margin-left: 25px;
+			margin-bottom: 20px;
+			background-color: white;
+			box-shadow: 2px 5px 5px grey;
+	}
+
+	.container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-left: -10px;
+			padding-bottom: 20px;
+	}
+
+
+	.lsec1 {
+			width: 100%;
+			/* border: 2px solid gray; */
+			/* margin-left: 35px; */
+			background-color: white;
+			/* box-shadow: 2px 5px 5px grey; */
+	}
+
+	.inner {
+    width: 90%;
+    margin-right: 130px;
+    margin-left: 30px;
+    display: flex;
+    margin-top: -10px;
+}
+
+}
+
+
+/* This Section is for Media Screens - Tablet Devices */
+@media screen and (min-width: 600px) {
+	.container {
+    width: 100%;
+    display: flex;
+    margin-left: -18px;
+    padding-bottom: 20px;
+}
+
+.nav-div {
+	width: 70%;
+	display: flex;
+	justify-content: end;
+	flex-direction: row;
+	padding-right: 5px;
+	padding-top: 20px;
+	height: 60px;
+}
+
+.bb-content {
+	background-color: red;
+	width: 32%;
+	padding: 40px 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.bba-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.ca1 {
+	width: 100%;
+	display: block;
+	background-color: black;
+	padding-left: 100px;
+	padding-right: 100px;
+	border-bottom: 2px solid white;
+}
+
+.ca3 {
+	background-color: none;
+	color: #feba4d;
+	width: 25%;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	line-height: 15px;
+}
+
+}

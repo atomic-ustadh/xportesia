@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Counter</title>
+</head>
+<body>
+    <h1>Visitor Counter</h1>
+    <p>Number of visitors today: <span id="visitorCount">0</span></p>
+    <button id="resetButton">Reset Count</button>
+
+    <script>
+			// Check if local storage contains a visitor count for today
+let visitorCount = localStorage.getItem('visitorCount');
+
+// Check if the visitor count is for today
+const lastVisitDate = localStorage.getItem('lastVisitDate');
+const today = new Date().toDateString();
+
+if (!lastVisitDate || lastVisitDate !== today) {
+    // If no data or data is not for today, increment the count
+    visitorCount = 1;
+    
+    // Update the last visit date
+    localStorage.setItem('lastVisitDate', today);
+} else {
+    // If data exists for today, keep the count as is
+    visitorCount = parseInt(visitorCount);
+}
+
+// Display the visitor count on the webpage
+const visitorCountElement = document.getElementById('visitorCount');
+visitorCountElement.textContent = visitorCount;
+
+// Add event listener to the reset button
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', () => {
+    // Reset the visitor count and update the display
+    visitorCount = 0;
+    localStorage.setItem('visitorCount', visitorCount);
+    visitorCountElement.textContent = visitorCount;
+});
+
+		</script>
+</body>
+</html>
