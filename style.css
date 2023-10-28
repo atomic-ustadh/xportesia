@@ -871,10 +871,16 @@ pre{
 	.container {
     width: 100%;
     display: flex;
-    margin-left: -18px;
+    margin-left: 0px;
     padding-bottom: 20px;
 }
-
+.lsec {
+	width: 34%;
+	border: 2px solid gray;
+	margin-left: 0px;
+	background-color: white;
+	box-shadow: 2px 5px 5px gray;
+}
 .nav-div {
 	width: 70%;
 	display: flex;
