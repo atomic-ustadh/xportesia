@@ -9,9 +9,9 @@ body {
 	background-color: white;
 	font-family: Carrois Gothic;
 }
-
 /* Special Section Ends Here */
 
+/* General Sections Starts Here */
 /* Header Section Starts Here */
 .hc-main {
 	display: flex;
@@ -72,77 +72,76 @@ body {
 	color: #feba4d;
 }
 
-/* Mobile Responsiveness Sections Starts Here */
-@media screen and (max-width: 600px) {
-	.nav-div {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		background-color: black;
-		justify-content: start;
-		padding-right: 0px;
-		padding-top: 20px;
-		position: fixed;
-		height: 100%;
-		overflow-x: scroll;
-	}
-
-	.navlink {
-		padding-right: 10px;
-		padding-left: 10px;
-		color: white;
-		text-decoration: none;
-		font-size: 30px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.navlink:hover {
-		text-decoration: none;
-		border-bottom: 2px solid #feba4d;
-	}
-
-	.logo-div {
-		display: flex;
-		flex-direction: row;
-		padding-left: 20px;
-		padding-top: 10px;
-		width: 30%;
-	}
-
-	.logo-img {
-		width: 60px;
-		height: max-content;
-		position: relative;
-		/*padding-top: 10px;*/
-	}
-
-	.logo {
-		padding-left: 10px;
-	}
-
-	.open-btn {
-		display: block;
-		margin-left: 170px;
-		font-size: 30px;
-		margin-top: 20px;
-		color: #feba4d;
-	}
-
-	.close-btn {
-		display: block;
-		position: fixed;
-		margin-left: 250px;
-		font-size: 60px;
-		margin-top: -20px;
-		color: #feba4d;
-	}
+/* Welcome Page - Counter Section */
+.ca1{
+	width: 100%;
+	display: block;
+	background-color: black;
+	padding-left: 200px;
+	padding-right: 100px;
+	border-bottom: 2px solid white;
 }
 
-/* Mobile Responsiveness Sections Ends Here */
+.ca2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.ca3{
+	background-color: none;
+	color: #feba4d;
+	width: 20%;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	line-height: 0px;
+}
+/* Welcome Page -Counter Section */
 /* Header Section Ends Here */
 
-/* Banner Section Starts Here */
+/* Footer Section Starts Here */
+.pg-foot {
+	background-color: black;
+	position: relative;
+	margin-bottom: -15px;
+	margin-top: -17px;
+	border-top: 1.5px solid white;
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+.bck-to-top {
+	display: none;
+	position: fixed;
+	text-align: center;
+	bottom: 10px;
+	right: 30px;
+	z-index: 1;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 3px;
+	border-radius: 50px;
+	transition: background-color, color 1s;
+	border: 1px solid black;
+	height: 50px;
+	width: 50px;
+}
+
+.bck-to-top:hover {
+	background-color: black;
+	color: white;
+}
+
+/* Footer Section Ends Here */
+/* General Sections Ends Here */
+
+/* Welcome Page */
+/* Banner Section */
 .banner {
 	background-image: url(business4-slider-bg.jpg);
 	background-position: center;
@@ -233,224 +232,11 @@ body {
 	color: white;
 	height: 30px;
 }
-
-/* Responsive Section Starts Here */
-@media screen and (max-width: 600px) {
-	.a-banner {
-		color: #feba4d;
-		padding-left: 40px;
-		font-weight: 700px;
-		font-size: 24px;
-		filter: drop-shadow(4px 4px 4px black);
-	}
-
-	.b-banner {
-		font-weight: 700px;
-		font-size: 40px;
-		padding-left: 40px;
-		color: white;
-		width: 400px;
-		filter: drop-shadow(4px 4px 6px black);
-		letter-spacing: 0px;
-	}
-
-	.c-banner {
-		padding-left: 220px;
-		color: #feba4d;
-		font-size: 15px;
-		filter: drop-shadow(4px 4px 6px black);
-	}
-
-	.bba-div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-left: 10px;
-		margin-right: 0px;
-	}
-
-	.bb-content {
-		background-color: red;
-		width: 97%;
-		padding: 40px 20px;
-		text-align: center;
-		border-radius: 10px;
-		margin-top: 5px;
-	}
-
-	.bf-div {
-		width: 100%;
-		background-color: black;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		display: block;
-		height: auto;
-	}
-
-	.bbf-div {
-		display: block;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin-left: 20px;
-		margin-right: 0px;
-	}
-
-	.bbf-content {
-		background-color: transparent;
-		color: white;
-		width: 85%;
-		padding: 0px 0px;
-		text-align: left;
-		border-radius: 10px;
-	}
-
-}
+/* Banner Section */
+/* Welcome Page */
 
 
-/* Banner Section Ends Here */
-
-/* Footer Section Starts Here */
-.pg-foot {
-	background-color: black;
-	position: relative;
-	margin-bottom: -15px;
-	margin-top: -17px;
-	border-top: 1.5px solid white;
-	color: white;
-	text-align: center;
-	display: block;
-}
-
-.bck-to-top {
-	display: none;
-	position: fixed;
-	text-align: center;
-	bottom: 10px;
-	right: 30px;
-	z-index: 1;
-	font-size: 30px;
-	border: none;
-	outline: none;
-	background-color: white;
-	color: black;
-	cursor: pointer;
-	padding: 3px;
-	border-radius: 50px;
-	transition: background-color, color 1s;
-	border: 1px solid black;
-	height: 50px;
-	width: 50px;
-}
-
-.bck-to-top:hover {
-	background-color: black;
-	color: white;
-}
-
-/* Mobile Responsiveness Section Starts Here */
-@media screen and (max-width: 600px) {
-	.pg-foot {
-		background-color: black;
-		position: relative;
-		margin-bottom: -15px;
-		color: white;
-		text-align: center;
-	}
-
-	.bck-to-top {
-		padding: 4px;
-		height: 40px;
-		width: 40px;
-		font-size: 22px;
-		/* right: 120px;
-		bottom: -13px; */
-	}
-
-}
-
-/* Mobile Responsiveness Section Ends Here */
-/* Footer Section Ends Here */
-
-/* excos.html table section starts here */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	border: 1px solid #ddd;
-}
-
-th,
-td {
-	text-align: left;
-	padding: 5px;
-	overflow-wrap: break-word;
-}
-
-tr:nth-child(even) {
-	background-color: #cec9c9
-}
-
-tr:nth-child(odd) {
-	background-color: white
-}
-
-/* excos.html table section ends here */
-
-/* Accordion Section Styling Starts Here */
-.shell {
-	background-color: black;
-	color: #feba4d;
-	;
-	cursor: pointer;
-	padding: 15px;
-	padding-left: 50px;
-	width: 100%;
-	border-top: 1px solid black;
-	text-align: left;
-	outline: none;
-	font-size: 20px;
-	font-family: 'Carrois Gothic';
-}
-
-.shell::after {
-	/* content: url(../svg/icon-expand-more.svg); */
-	content: "+";
-	float: left;
-	width: 50px;
-	height: 5px;
-}
-
-.active::after {
-	content: "-";
-	float: left;
-	width: 50px;
-	height: 5px;
-}
-
-.active {
-	background-color: white;
-	color: black;
-}
-
-.shell:hover {
-	background-color: #ccc;
-	color: black;
-}
-
-.inner {
-	padding: 0 18px;
-	padding-left: 50px;
-	display: none;
-	stroke-opacity: 0.4;
-	background-color: transparent;
-	color: #feba4d;
-	overflow: hidden;
-}
-
-/* Accordion Section Styling Stops Here */
-
-/* about.html styling section starts here */
-
+/* About Page */
 .md1 {
 	width: 100%;
 	height: auto;
@@ -562,165 +348,61 @@ tr:nth-child(odd) {
 	background-color: black;
 }
 
-@media screen and (max-width: 600px) {
-	.md1 {
-		width: 100%;
-		height: auto;
-		display: block;
-		background-color: black;
-		padding-left: 5px;
-		padding-top: 0px;
-		padding-right: 5px;
-	}
-
-	.md2,
-	.ms1 {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.md3 {
-		width: 100%;
-		height: 525px;
-		background-color: rgb(0, 0, 0, 0.5);
-	}
-
-	.md3-img {
-		width: 100%;
-		height: 100%;
-	}
-
-	.md3-inner {
-		padding: 20px;
-		position: absolute;
-		background-color: rgb(0, 0, 0, 0.5);
-		color: white;
-		top: 500px;
-		font-weight: 400;
-	}
-
-	.md4 {
-		width: 100%;
-		height: auto;
-		background-color: burlywood;
-		padding: 0px 0px 0px 3px;
-	}
-
-	.md5 {
-		border-left: 10px solid black;
-	}
-
-	.md5-h3 {
-		padding-left: 10px;
-		font-size: 20px;
-		font-weight: 400;
-	}
-
-	.ms2 {
-		width: 100%;
-		background-color: rgb(0, 0, 0, 0.5);
-		color: white;
-		padding-top: 0px;
-		padding-right: 10px;
-	}
-
-	.ms2-p1 {
-		padding-top: 0px;
-		color: #feba4d;
-	}
-
-	.ms2-h3 {
-		font-size: 50px;
-		font-weight: 400;
-		color: white;
-	}
-
-	.ms2-h3c {
-		font-size: 50px;
-		font-weight: 400;
-		color: white;
-		margin-top: -10px;
-	}
-
-	.ms3 {
-		width: 100%;
-	}
-
-	.ms3-img {
-		width: 100%;
-		height: 350px;
-	}
-
-	.wd1{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding-left: 5px;
-		padding-bottom: 10px;
-	}
-	
-	.wd2{
-		width: 100%;
-		padding-right: 10px;
-	}
-	
-	.wd3{
-		width: 98%;
-		background-color: black;
-	}
-}
-
-.ca1{
-	width: 100%;
-	display: block;
+/* About Page - Accordion Section */
+.shell {
 	background-color: black;
-	padding-left: 200px;
-	padding-right: 100px;
-	border-bottom: 2px solid white;
-}
-
-.ca2{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.ca3{
-	background-color: none;
 	color: #feba4d;
-	width: 20%;
-	text-align: center;
-	padding: 5px 0px 5px 0px;
-	line-height: 0px;
+	cursor: pointer;
+	padding: 15px;
+	padding-left: 50px;
+	width: 100%;
+	border-top: 1px solid black;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	font-family: 'Carrois Gothic';
 }
 
-
-@media screen and (max-width: 600px) {
-	.ca1{
-		width: 100%;
-		display: block;
-		background-color: black;
-		padding-left: 126px;
-		padding-right: 100px;
-		border-bottom: 2px solid white;
-	}
-	
-	.ca2{
-		display: flex;
-    flex-direction: column;
-	}
-	
-	.ca3{
-		background-color: transparent;
-    color: #feba4d;
-    width: 120%;
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    line-height: 0px;
-	}
+.shell::after {
+	/* content: url(../svg/icon-expand-more.svg); */
+	content: "+";
+	float: left;
+	width: 50px;
+	height: 5px;
 }
 
+.active::after {
+	content: "-";
+	float: left;
+	width: 50px;
+	height: 5px;
+}
 
+.active {
+	background-color: white;
+	color: black;
+}
+
+.shell:hover {
+	background-color: #ccc;
+	color: black;
+}
+
+.inner {
+	padding: 0 18px;
+	padding-left: 50px;
+	display: none;
+	stroke-opacity: 0.4;
+	background-color: black;
+	color: #feba4d;
+	overflow: hidden;
+}
+
+/* Accordion Sesction */
+/* About Page */
+
+
+/* Contact Page */
 form {
 	margin-top: 20px;
 	font-family: Carrois Gothic;
@@ -761,7 +443,9 @@ button[type="submit"]:hover {
 	color: white;
 }
 
-/* NEW ONE */
+/* Contact Page */
+
+/* Services Page */
 .large-cont{
 	width: 100%; 
 	background-color: white; 
@@ -826,103 +510,4 @@ pre{
 	border-bottom: 2px solid black;
 }
 
-/* This Section is for Media Screens - Mobile Devices */
-@media screen and (max-width: 600px) {
-
-	.lsec {
-			width: 90%;
-			border: 2px solid gray;
-			margin-left: 25px;
-			margin-bottom: 20px;
-			background-color: white;
-			box-shadow: 2px 5px 5px grey;
-	}
-
-	.container {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			margin-left: -10px;
-			padding-bottom: 20px;
-	}
-
-
-	.lsec1 {
-			width: 100%;
-			/* border: 2px solid gray; */
-			/* margin-left: 35px; */
-			background-color: white;
-			/* box-shadow: 2px 5px 5px grey; */
-	}
-
-	.inner {
-    width: 90%;
-    margin-right: 130px;
-    margin-left: 30px;
-    display: flex;
-    margin-top: -10px;
-}
-
-}
-
-
-/* This Section is for Media Screens - Tablet Devices */
-@media screen and (min-width: 768px) {
-	.container {
-    width: 100%;
-    display: flex;
-    margin-left: 0px;
-    padding-bottom: 20px;
-}
-.lsec {
-	width: 34%;
-	border: 2px solid gray;
-	margin-left: 0px;
-	background-color: white;
-	box-shadow: 2px 5px 5px gray;
-}
-.nav-div {
-	width: 70%;
-	display: flex;
-	justify-content: end;
-	flex-direction: row;
-	padding-right: 5px;
-	padding-top: 20px;
-	height: 60px;
-}
-
-.bb-content {
-	background-color: red;
-	width: 32%;
-	padding: 40px 20px;
-	text-align: center;
-	border-radius: 10px;
-}
-
-.bba-div {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.ca1 {
-	width: 100%;
-	display: block;
-	background-color: black;
-	padding-left: 100px;
-	padding-right: 100px;
-	border-bottom: 2px solid white;
-}
-
-.ca3 {
-	background-color: none;
-	color: #feba4d;
-	width: 25%;
-	text-align: center;
-	padding: 5px 0px 5px 0px;
-	line-height: 15px;
-}
-
-}
+/* Services Page */
