@@ -47,7 +47,7 @@ body {
 }
 
 .wd3 {
-	width: 40%;
+	width: 50%;
 	background-color: black;
 	/* height: 0px; */
 }
@@ -85,5 +85,24 @@ body {
 	width: 20px;
 	height: 5px;
 }
+/* Start It Here */
+.md1 {
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: black;
+	padding-left: 50px;
+	padding-top: 70px;
+	padding-right: 15px;
+}
+
+.wd1 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	/* padding-left: 50px; */
+	padding-bottom: 20px;
+}
+
 
 }
